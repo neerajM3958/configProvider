@@ -32,11 +32,6 @@ public class ConfigProvider {
         mLogger.info("Initialized.");
     }
 
-    public static void main(String[] args) {
-        System.out.println("Main method do nothing.");
-//        System.out.println(getConfig("log_level","none"));
-    }
-
     public void loadAll() throws IOException {
         final File[] confs = new File(DIR_CONFIG_PROVIDER).listFiles(new FilenameFilter() {
             @Override
@@ -100,4 +95,10 @@ public class ConfigProvider {
         if (encrypted) return new Encryptor().decrypt(getConfig(key));
         return getConfig(key);
     }
+
+    public static void main(String[] args) {
+        System.out.println("Main method do nothing.");
+        System.out.println("This is not an cli client.");
+    }
+
 }
