@@ -1,0 +1,10 @@
+.idea
+logs
+*.log
+out
+logback_nbservice.xml
+logback_sftp_bridge.xml
+syncsftp.properties
+sync_index.txt
+Test.java
+dist

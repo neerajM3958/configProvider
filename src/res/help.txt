@@ -1,0 +1,36 @@
+    ConfigProvider PROGRAM
+    Description   : Java based configuration provider, CLI control as well as programmable interface.
+    Author        : Neeraj Malhotra
+    Date Created  : 15 March, 2020
+    Date Modified : 19  Oct, 2020
+
+    ---ABOUT---
+        Config Provider is a java based configuration file read/write tool or library. It provides easy CLI interface.
+        it supports encryption for storing keys.
+
+        ---THIS LIBRARY ALSO PROVIDE PROGRAMABLE INTERFACE---
+    ---ABOUT---
+
+    ---USAGE---
+        -v verbose mode, It will show all logs.
+        -g <configuration name or path> <key>
+            -g : function used for reading configuration key's value.
+                --get can also be used
+            example :
+                -g file.conf username
+        -s <configuration name or path> <key> <value> <encryption - true or false>
+            -s : function used for saving configuration key/value.
+                --set can also be used
+            example :
+                -s file.conf username neeraj
+                -s file.conf password pwd true
+        --help or -h
+            show programs manual
+    ---USAGE---
+
+    ---CAUTION---
+
+        By default jvm use will use HOME environment variable. to pass custom home use java property passing like -
+            -DHOME=custom_path
+
+    ---CAUTION---
