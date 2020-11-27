@@ -20,7 +20,6 @@ public class ConfigProviderCLI extends CLI {
         }
     }
 
-
     @Override
     public boolean opts(String key, ArrayList<String> values) {
         mLogger.debug(String.format("OPTS - function: %s | argument: %s ",key, values));

@@ -5,11 +5,7 @@ import org.slf4j.LoggerFactory;
 
 import java.io.*;
 import java.nio.file.Paths;
-import java.security.InvalidKeyException;
-import java.security.NoSuchAlgorithmException;
-import java.security.spec.InvalidKeySpecException;
 import java.util.Properties;
-import java.util.logging.Level;
 
 public class ConfigProvider {
     private Logger mLogger;
